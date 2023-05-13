@@ -52,7 +52,7 @@ export class ProjectComponent {
     this.columns.value.push("To Be Done");
     this.columns.value.push("Work In Progress");
     this.columns.value.push("Completed");
-  }
+   }
 
 
   addColumn(){
@@ -113,7 +113,7 @@ export class ProjectComponent {
     
     if(this.members.value.length==0){
   
-      this.members.value.push(this.currentUserName);
+      this.members.value.push(this.user.getUser());
     }
 
     if(!this.members.value.includes(this.currentUserName)){
